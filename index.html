@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum UTS</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        p {
+            margin: 10px;
+            margin-left: 25px;
+            margin-top: px;
+        }
+
+        fieldset {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+        table {
+            height: 80px;
+            margin: 30px;
+            font-size: 13px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        ul{
+            list-style: none;
+            background-color: #eee;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .tombol .daftar {
+            background-color: #2429d1;
+            margin: 20px;
+            padding: 8px;
+            border-radius: 3px;
+            border: none;
+            font-size: 13px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
+    <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jadwal</a></li>
+        <li><a href="#">Detail Jadwal</a></li>
+        <li>Daftar Peserta</li>
+      </ul>
+
+    <p>Mahasiswa Seminar - Diego Armando (0102002)</p>
+    <p>Judul : Rancang Bangun Aplikasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC Framework</p>
+    <p>Waktu : Senin, 4 Januari 2021, 10.00</p>
+
+    <fieldset>
+        <legend>Form Peserta Seminar</legend>
+        <table>
+            <tr>
+                <td><label for="NIM">NIM</label></td>
+                <td></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="Nama">Nama</label></td>
+                <td></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Prodi</td>
+                <td></td>
+                <td>
+                    <select name="Jabatan">
+                        <option value=""> - Sistem Informasi -</option>
+                        <option value=""> - Bisnis Digital -</option>
+                        <option value=""> - Teknik Informatika -</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Program</td>
+                <td></td>
+                <td>
+                    <input type="radio" name="D3" value="D3">
+                    <label for="D3">D3</label>
+                    <input type="radio" name="S1 Reguler" value="S1 Reguler">
+                    <label for="S1 Reguler">S1 Reguler</label>
+                    <input type="radio" name="S1 Fast Trackt" value="S1 Fast Trackt">
+                    <label for="S1 Fast Trackt">S1 Fast Trackt</label>
+                    <input type="radio" name="S2" value="S2">
+                    <label for="S2">S2</label>
+                </td>
+            </tr>
+        </table>
+        <div class="tombol">
+            <button type="submit" class="daftar">Daftar</button>
+        </div>
+    </fieldset>
+</body>
+</html>
